@@ -1,0 +1,36 @@
+.graph-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  /* background: linear-gradient(180deg, #ff3cff 0%, #03f7eb 100%); */
+}
+.graph-container div {
+  width: 95%;
+}
+.chart1 {
+  grid-row: 1 / span 1; /* ocupa la primera fila */
+  grid-column: 1 / span 1; /* ocupa la primera columna */
+}
+
+.chart2 {
+  grid-row: 1 / span 1; /* ocupa la primera fila */
+  grid-column: 2 / span 1; /* ocupa la segunda columna */
+}
+
+.chart3 {
+  grid-row: 2 / span 1; /* ocupa la segunda fila */
+  grid-column: 1 / span 1; /* ocupa la primera columna */
+}
+
+.chart4 {
+  grid-row: 2 / span 1; /* ocupa la segunda fila */
+  grid-column: 2 / span 1; /* ocupa la segunda columna */
+}
+@media (max-width: 768px) {
+  .graph-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+}
